@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>SkillSwap | Campus Collab</title>
+<link rel="stylesheet" href="skillswap.css">
+</head>
+<body>
+
+<div class="header">
+  <div class="navbar">
+    <div class="logo">Campus<span>Collab</span></div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a class="active" href="skillswap.html">SkillSwap</a>
+      <a href="eventhub.html">EventHub</a>
+      <a href="faculty.html">Faculty</a>
+      <a href="courses.html">Courses</a>
+      <a href="projects.html">ProjectXpo</a>
+      <a href="career.html">Career</a>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+
+  <div class="page-head">
+    <p class="eyebrow">PEER LEARNING</p>
+    <h1>SkillSwap</h1>
+    <p>Exchange knowledge with students who know what you want to learn.</p>
+  </div>
+
+  <div class="card-row">
+    <div class="skill-card">
+      <p class="tag">Technical</p>
+      <h3>Python &amp; Machine Learning</h3>
+      <p>Learn Python basics and machine learning from Nazmul Hasan.</p>
+      <button onclick="contactSkill('Nazmul Hasan')">Connect</button>
+    </div>
+    <div class="skill-card">
+      <p class="tag">Creative</p>
+      <h3>Graphic Design</h3>
+      <p>Figma, Canva and UI design sessions by Ashikuzzaman.</p>
+      <button onclick="contactSkill('Ashikuzzaman')">Connect</button>
+    </div>
+    <div class="skill-card">
+      <p class="tag">Academic</p>
+      <h3>Public Speaking</h3>
+      <p>Improve presentations and communication with Fardin.</p>
+      <button onclick="contactSkill('Fardin')">Connect</button>
+    </div>
+    <div class="skill-card">
+      <p class="tag">Technical</p>
+      <h3>Web Development</h3>
+      <p>HTML, CSS and JavaScript practice sessions by Bijoy.</p>
+      <button onclick="contactSkill('Bijoy')">Connect</button>
+    </div>
+  </div>
+
+</div>
+
+<div class="footer">
+  <p>&copy; 2026 Campus Collab</p>
+</div>
+
+<script>
+
+function contactSkill(name) {
+  alert("A connection request has been sent to " + name + ".");
+}
+</script>
+</body>
+</html>
