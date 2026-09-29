@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CampusCareer | Campus Collab</title>
+<link rel="stylesheet" href="career.css">
+</head>
+<body>
+
+<div class="header">
+  <div class="navbar">
+    <div class="logo">Campus<span>Collab</span></div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="skillswap.html">SkillSwap</a>
+      <a href="eventhub.html">EventHub</a>
+      <a href="faculty.html">Faculty</a>
+      <a href="courses.html">Courses</a>
+      <a href="projects.html">ProjectXpo</a>
+      <a class="active" href="career.html">Career</a>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+
+  <div class="page-head">
+    <p class="eyebrow">CAREER OPPORTUNITIES</p>
+    <h1>CampusCareer</h1>
+    <p>Find internships, part-time roles and entry-level opportunities.</p>
+  </div>
+
+  <div class="card-row">
+    <div class="job-card">
+      <div class="tag">Internship</div>
+      <h3>Frontend Developer Intern</h3>
+      <p>TechNova - Dhaka</p>
+      <small>HTML - CSS - JavaScript</small><br>
+      <button onclick="applyJob('Frontend Developer Intern')">Apply Now</button>
+    </div>
+    <div class="job-card">
+      <div class="tag">Internship</div>
+      <h3>ML Research Intern</h3>
+      <p>AI Labs - Remote</p>
+      <small>Python - Machine Learning</small><br>
+      <button onclick="applyJob('ML Research Intern')">Apply Now</button>
+    </div>
+    <div class="job-card">
+      <div class="tag">Part-time</div>
+      <h3>Junior Software Engineer</h3>
+      <p>CodeWorks - Dhaka</p>
+      <small>Java - SQL - Git</small><br>
+      <button onclick="applyJob('Junior Software Engineer')">Apply Now</button>
+    </div>
+  </div>
+
+</div>
+
+<div class="footer">
+  <p>&copy; 2026 Campus Collab</p>
+</div>
+
+<script>
+
+function applyJob(title) {
+  var name = prompt("Enter your name to apply for " + title + ":");
+  if (name) {
+    alert("Thank you " + name + "! Your application for " + title + " has been submitted.");
+  }
+}
+</script>
+</body>
+</html>

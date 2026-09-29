@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>EventHub | Campus Collab</title>
+<link rel="stylesheet" href="eventhub.css">
+</head>
+<body>
+
+<div class="header">
+  <div class="navbar">
+    <div class="logo">Campus<span>Collab</span></div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="skillswap.html">SkillSwap</a>
+      <a class="active" href="eventhub.html">EventHub</a>
+      <a href="faculty.html">Faculty</a>
+      <a href="courses.html">Courses</a>
+      <a href="projects.html">ProjectXpo</a>
+      <a href="career.html">Career</a>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+
+  <div class="page-head">
+    <p class="eyebrow">CAMPUS ACTIVITIES</p>
+    <h1>EventHub</h1>
+    <p>Find events, workshops and activities happening around campus.</p>
+  </div>
+
+  <div class="event">
+    <div class="date"><span class="day">12</span>OCT</div>
+    <div>
+      <p class="tag">Workshop</p>
+      <h2>AI &amp; Machine Learning Bootcamp</h2>
+      <p>10:00 AM -  Seminar Hall</p>
+      <button onclick="registerEvent('AI & Machine Learning Bootcamp')">Register</button>
+    </div>
+  </div>
+
+  <div class="event">
+    <div class="date"><span class="day">18</span>OCT</div>
+    <div>
+      <p class="tag">Club</p>
+      <h2>Programming Contest</h2>
+      <p>2:00 PM  - Lab 304</p>
+      <button onclick="registerEvent('Programming Contest')">Register</button>
+    </div>
+  </div>
+
+  <div class="event">
+    <div class="date"><span class="day">25</span>OCT</div>
+    <div>
+      <p class="tag">Seminar</p>
+      <h2>Career in Software Engineering</h2>
+      <p>11:30 AM  - Auditorium</p>
+      <button onclick="registerEvent('Career in Software Engineering')">Register</button>
+    </div>
+  </div>
+
+</div>
+
+<div class="footer">
+  <p>&copy; 2026 Campus Collab</p>
+</div>
+
+<script>
+function registerEvent(eventName) {
+  alert("You have registered for: " + eventName);
+}
+</script>
+</body>
+</html>
