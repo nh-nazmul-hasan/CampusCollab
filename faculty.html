@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Faculty Rating | Campus Collab</title>
+<link rel="stylesheet" href="faculty.css">
+</head>
+<body>
+
+<div class="header">
+  <div class="navbar">
+    <div class="logo">Campus<span>Collab</span></div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="skillswap.html">SkillSwap</a>
+      <a href="eventhub.html">EventHub</a>
+      <a class="active" href="faculty.html">Faculty</a>
+      <a href="courses.html">Courses</a>
+      <a href="projects.html">ProjectXpo</a>
+      <a href="career.html">Career</a>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+
+  <div class="page-head">
+    <p class="eyebrow">STUDENT FEEDBACK</p>
+    <h1>Faculty Rating</h1>
+    <p>Share constructive feedback about your learning experience.</p>
+  </div>
+
+  <div class="card-row">
+    <div class="faculty-card">
+      <div class="avatar-center">NJJO</div>
+      <h3>Nusrat Jahan Jonaki</h3>
+      <p>CSE - Web &amp; Internet Programming</p>
+      <p id="rating1">Average Rating: 4.8 / 5</p>
+      <div class="rating-buttons">
+        <button onclick="rateFaculty('rating1',1)">1</button>
+        <button onclick="rateFaculty('rating1',2)">2</button>
+        <button onclick="rateFaculty('rating1',3)">3</button>
+        <button onclick="rateFaculty('rating1',4)">4</button>
+        <button onclick="rateFaculty('rating1',5)">5</button>
+      </div>
+    </div>
+
+    <div class="faculty-card">
+      <div class="avatar-center">MHS</div>
+      <h3>Mahjabin Sultana</h3>
+      <p>CSE - Graphics Design</p>
+      <p id="rating2">Average Rating: 4.6 / 5</p>
+      <div class="rating-buttons">
+        <button onclick="rateFaculty('rating2',1)">1</button>
+        <button onclick="rateFaculty('rating2',2)">2</button>
+        <button onclick="rateFaculty('rating2',3)">3</button>
+        <button onclick="rateFaculty('rating2',4)">4</button>
+        <button onclick="rateFaculty('rating2',5)">5</button>
+      </div>
+    </div>
+
+    <div class="faculty-card">
+      <div class="avatar-center">KA</div>
+      <h3>Dr. Kamal Ahmed</h3>
+      <p>CSE &bull; Database Systems</p>
+      <p id="rating3">Average Rating: 4.7 / 5</p>
+      <div class="rating-buttons">
+        <button onclick="rateFaculty('rating3',1)">1</button>
+        <button onclick="rateFaculty('rating3',2)">2</button>
+        <button onclick="rateFaculty('rating3',3)">3</button>
+        <button onclick="rateFaculty('rating3',4)">4</button>
+        <button onclick="rateFaculty('rating3',5)">5</button>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div class="footer">
+  <p>&copy; 2026 Campus Collab</p>
+</div>
+
+<script>
+/* ---------- Faculty Rating: simple 1-5 rating ---------- */
+// id = kon card er rating text bodlabo, score = user kon number e click korlo
+function rateFaculty(id, score) {
+  document.getElementById(id).innerText = "Your Rating: " + score + " / 5";
+}
+</script>
+</body>
+</html>

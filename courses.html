@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Course Review | Campus Collab</title>
+<link rel="stylesheet" href="courses.css">
+</head>
+<body>
+
+<div class="header">
+  <div class="navbar">
+    <div class="logo">Campus<span>Collab</span></div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="skillswap.html">SkillSwap</a>
+      <a href="eventhub.html">EventHub</a>
+      <a href="faculty.html">Faculty</a>
+      <a class="active" href="courses.html">Courses</a>
+      <a href="projects.html">ProjectXpo</a>
+      <a href="career.html">Career</a>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+
+  <div class="page-head">
+    <p class="eyebrow">LEARN SMARTER</p>
+    <h1>Course Review</h1>
+    <p>Explore student ratings for courses, grouped by semester. Click a row to see more details.</p>
+  </div>
+
+  <table>
+    <tr>
+      <th rowspan="2">Semester</th>
+      <th colspan="3">Course Details</th>
+      <th rowspan="2">Rating</th>
+    </tr>
+    <tr>
+      <th>Code</th>
+      <th>Name</th>
+      <th>Credit</th>
+    </tr>
+
+    <tr class="course-row" onclick="courseInfo('CSE246 - Object Oriented Programming','Java, OOP concepts and software design.')">
+      <td rowspan="2">4th Semester</td>
+      <td>CSE246</td>
+      <td>Object Oriented Programming</td>
+      <td>3.0</td>
+      <td>4.5 / 5</td>
+    </tr>
+    <tr class="course-row-alt" onclick="courseInfo('CSE250 - Data Structures','Arrays, linked lists, stacks, queues and trees.')">
+      <td>CSE250</td>
+      <td>Data Structures</td>
+      <td>3.0</td>
+      <td>4.6 / 5</td>
+    </tr>
+
+    <tr class="course-row" onclick="courseInfo('CSE310 - Database Management','SQL, relational models and database design.')">
+      <td rowspan="2">5th Semester</td>
+      <td>CSE310</td>
+      <td>Database Management</td>
+      <td>3.0</td>
+      <td>4.4 / 5</td>
+    </tr>
+    <tr class="course-row-alt" onclick="courseInfo('CSE320 - Computer Networks','Network layers, protocols and data communication.')">
+      <td>CSE320</td>
+      <td>Computer Networks</td>
+      <td>3.0</td>
+      <td>4.3 / 5</td>
+    </tr>
+
+    <tr class="course-row" onclick="courseInfo('CSE375 - Advanced Algorithms','Problem solving, graph algorithms and complexity.')">
+      <td>6th Semester</td>
+      <td>CSE375</td>
+      <td>Advanced Algorithms</td>
+      <td>3.0</td>
+      <td>4.8 / 5</td>
+    </tr>
+  </table>
+
+</div>
+
+<div class="footer">
+  <p>&copy; 2026 Campus Collab</p>
+</div>
+
+<script>
+function courseInfo(name, description) {
+  alert(name + "\n\n" + description);
+}
+</script>
+</body>
+</html>

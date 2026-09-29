@@ -1,0 +1,119 @@
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f5f7fa;
+  color: #333333;
+  line-height: 1.6;
+}
+div button{
+  border-radius: 50%;
+}
+
+
+
+.header {
+  background-color: #ffffff;
+  border-bottom: 2px solid #e2e6ee;
+  padding: 15px 0;
+}
+.navbar {
+  overflow: auto; 
+}
+.logo { font-size: 22px; font-weight: bold; color: #333333; float: left; }
+.logo span { color: #2b6cb0; }
+.nav-links { float: right; }
+.nav-links a {
+  display: inline-block;
+  margin-left: 16px;
+  text-decoration: none;
+  color: #555555;
+  padding: 6px 10px;
+  border-radius: 5px;
+}
+.nav-links a:hover { background-color: #e8f0fe; color: #2b6cb0; }
+.active { background-color: #e8f0fe; color: #2b6cb0; }
+
+
+.eyebrow { color: #2b6cb0; font-weight: bold; letter-spacing: 1px; font-size: 13px; }
+.tag {
+  display: inline-block;
+  background-color: #e8f0fe;
+  color: #2b6cb0;
+  padding: 3px 10px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: bold;
+}
+button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 14px;
+  margin: 5px 5px 5px 0;
+  border: none;
+  cursor: pointer;
+  background-color: #2b6cb0;
+  color: #ffffff;
+}
+button:hover { background-color: #1e4e80; }
+
+/* ===== Footer ===== */
+.footer {
+  text-align: center;
+  padding: 25px;
+  color: #777777;
+  border-top: 1px solid #e2e6ee;
+  margin-top: 40px;
+}
+
+
+.page-head { text-align: center; padding: 50px 20px 30px; }
+.page-head h1 { font-size: 34px; margin: 10px 0; }
+.page-head p { max-width: 600px; margin: 12px auto; color: #555555; }
+
+
+.card-row { overflow: auto; margin: 25px 0; }
+
+
+.faculty-card {
+  float: left;
+  width: 31%;
+  margin: 1.15%;
+  background-color: #ffffff;
+  border: 1px solid #e2e6ee;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+}
+
+
+.avatar-center {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: #e8f0fe;
+  color: #2b6cb0;
+  text-align: center;
+  line-height: 45px;
+  font-weight: bold;
+  margin: 0 auto 10px;
+}
+
+
+.rating-buttons a {
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  line-height: 28px;
+  text-align: center;
+  background-color: #e8f0fe;
+  color: #2b6cb0;
+  border-radius: 50%;
+  text-decoration: none;
+  margin-right: 4px;
+  font-weight: bold;
+}
+.rating-buttons a:hover { background-color: #2b6cb0; color: #ffffff; }
